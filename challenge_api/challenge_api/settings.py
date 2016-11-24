@@ -78,7 +78,6 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
         'NAME': 'challenge_api',
-        # 'NAME': os.path.join(BASE_DIR, 'db.mysql'),
         'USER': 'root',
         'PASSWORD': 'jmBq!x7a',
     }
