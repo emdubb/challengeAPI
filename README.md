@@ -27,3 +27,42 @@
 <a name="data"></a>
 
 ### Data Model
+
+- [User Model](#userModel)
+- [Competition Model](#competitionModel)
+- [Challenge Model](#challengeModel)
+
+<a name="userModel"></a>
+
+##### User Model
+
+| Key          | Value Type | Value Description |
+| ------------ | ---------- | ----------------- |
+| fname        | CharField  | *Required.*       |
+| lname        | CharField  | *Required.*       |
+| email        | EmailField | *Required.*       |
+| password     | CharField  | *Required.*       |
+| profile_url  | ImageField | *Optional.*       |
+| username     | CharField  | *Required.*       |
+| device_model | CharField  | *Optional.*       |
+| device_type  | CharField  | *Optional.*       |
+| timezone     | CharField  | *Optional.*       |
+
+<a name="competitionModel"></a>
+
+##### Competition Model
+
+| Key       | Value Type | Value Description |
+| --------- | ---------- | ----------------- |
+| members   |            | *Required.*       |
+| challenge |            | *Required.*       |
+
+<a name="challengeModel"></a>
+
+##### Challenge Model
+
+| Key   | Value Type   | Value Descripion |
+| ----- | ------------ | ---------------- |
+| days  | IntegerField | *Required.*      |
+| teams | IntegerField | *Required.*      |
+
